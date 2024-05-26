@@ -1,7 +1,6 @@
 import React from 'react';
 import circle from '../../images/assets/ovallaptop.png';
 import lock from '../../images/assets/lock.png';
-import button from '../../images/assets/sendinstructions.png';
 
 const EmailInstructions: React.FC = () => {
   return (
@@ -24,11 +23,19 @@ const EmailInstructions: React.FC = () => {
           
           {/* Resend Button */}
           <form className="w-full">
-            <div className="mb-4">
-              <button type="submit" className="cursor-pointer">
-                <img src={button} alt="Resend Instructions Button" />
-              </button>
-            </div>
+          <div className="flex items-center justify-between mt-6 md:mt-12">
+  <button
+    type="submit"
+    className="text-white py-3 px-12 cursor-pointer focus:outline-none"
+    style={{
+      background: 'linear-gradient(to right, #EF621D, #E53F51)',
+      borderRadius: '32.5px',
+      width: '500px'
+    }}
+  >
+    Resend Instructions
+  </button>
+</div>
           </form>
         </div>
         

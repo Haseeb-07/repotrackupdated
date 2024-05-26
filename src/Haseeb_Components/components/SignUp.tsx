@@ -1,5 +1,4 @@
 import React from 'react';
-import loginbtn from '../../images/assets/loginbtn.png';
 import circle from '../../images/assets/ovallaptop.png';
 
 const SignUp: React.FC = () => {
@@ -45,11 +44,20 @@ const SignUp: React.FC = () => {
           </div>
           
           {/* Login Button */}
-          <div className="flex items-center justify-between mt-12">
-            <button type="submit" className="cursor-pointer">
-              <img src={loginbtn} alt="Login Button" />
-            </button>
-          </div>
+          <div className="flex items-center justify-between mt-6 md:mt-12">
+  <button
+    type="submit"
+    className="text-white py-3 px-12 cursor-pointer focus:outline-none"
+    style={{
+      background: 'linear-gradient(to right, #EF621D, #E53F51)',
+      borderRadius: '32.5px',
+      width: '500px'
+    }}
+  >
+    Login
+  </button>
+</div>
+
         </div>
         <p className="mt-4 text-center text-green-500 lg:absolute lg:top-0 lg:right-0 lg:mt-4 lg:mr-4 lg:text-right">Already have an account? Sign In</p>
       </div>

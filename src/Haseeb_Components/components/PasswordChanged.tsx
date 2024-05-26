@@ -1,5 +1,5 @@
 import React from 'react';
-import loginbtn from '../../images/assets/loginbtn.png';
+
 import circle from '../../images/assets/ovallaptop.png';
 import lock from '../../images/assets/tick.png';
 
@@ -23,11 +23,19 @@ const PasswordChanged: React.FC = () => {
           <h6 className="text-sm mb-6 text-left">You successfully changed your password.</h6>
           
           {/* Login Button */}
-          <div className="flex items-center justify-between mt-12">
-            <button type="submit" className="cursor-pointer">
-              <img src={loginbtn} alt="Login Button" />
-            </button>
-          </div>
+          <div className="flex items-center justify-between mt-6 md:mt-12">
+  <button
+    type="submit"
+    className="text-white py-3 px-12 cursor-pointer focus:outline-none"
+    style={{
+      background: 'linear-gradient(to right, #EF621D, #E53F51)',
+      borderRadius: '32.5px',
+      width: '500px'
+    }}
+  >
+    SignIn
+  </button>
+</div>
         </div>
         <p className="mt-4 text-center text-green-500 lg:absolute lg:top-0 lg:right-0 lg:mt-4 lg:mr-4 lg:text-right">Don’t have an account? Sign Up</p>
       </div>

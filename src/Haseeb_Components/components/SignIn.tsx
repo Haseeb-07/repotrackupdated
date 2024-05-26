@@ -1,5 +1,4 @@
 import React from 'react';
-import loginbtn from '../../images/assets/loginbtn.png';
 import circle from '../../images/assets/ovallaptop.png';
 
 const SignIn: React.FC = () => {
@@ -43,10 +42,19 @@ const SignIn: React.FC = () => {
               <p className="text-gray-400 text-sm mt-2 text-right">Forgot Password?</p>
             </div>
             <div className="flex items-center justify-between mt-6 md:mt-12">
-              <button type="submit" className="cursor-pointer">
-                <img src={loginbtn} alt="Login Button" />
-              </button>
-            </div>
+  <button
+    type="submit"
+    className="text-white py-3 px-12 cursor-pointer focus:outline-none"
+    style={{
+      background: 'linear-gradient(to right, #EF621D, #E53F51)',
+      borderRadius: '32.5px',
+      width: '500px'
+    }}
+  >
+    Login
+  </button>
+</div>
+
           </form>
         </div>
         <p className="mt-4 text-center text-green-500 lg:absolute lg:top-0 lg:right-0 lg:mt-4 lg:mr-4 lg:text-right">Don’t have an account? Sign Up</p>

@@ -1,7 +1,7 @@
 import React from 'react';
 import circle from '../../images/assets/ovallaptop.png';
 import lock from '../../images/assets/lock.png';
-import button from '../../images/assets/sendinstructions.png';
+
 
 const ForgotPassword: React.FC = () => {
   return (
@@ -30,11 +30,19 @@ const ForgotPassword: React.FC = () => {
               </label>
               <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-transparent" id="email" type="text" placeholder="example@gmail.com" />
             </div>
-            <div className="mb-4">
-              <button type="submit" className="cursor-pointer">
-                <img src={button} alt="Send Instructions Button" />
-              </button>
-            </div>
+            <div className="flex items-center justify-between mt-6 md:mt-12">
+  <button
+    type="submit"
+    className="text-white py-3 px-12 cursor-pointer focus:outline-none"
+    style={{
+      background: 'linear-gradient(to right, #EF621D, #E53F51)',
+      borderRadius: '32.5px',
+      width: '500px'
+    }}
+  >
+    Send Instructions
+  </button>
+</div>
           </form>
         </div>
         <p className="mt-4 text-center text-green-500 lg:absolute lg:top-0 lg:right-0 lg:mt-4 lg:mr-4 lg:text-right">Don’t have an account? Sign Up</p>
